@@ -1,0 +1,101 @@
+/**************************
+CSS RESET 
+***************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**************************
+BASE RULES
+***************************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/**************************
+LAYOUT RULES
+***************************/
+
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**************************
+COMPONENTS
+***************************/
+
+.header {
+    background-color: rgba(70, 81, 88, .7);
+    overflow: auto;
+    padding: 55px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    margin-top: 11px;
+    display: inline-block;
+}
+
+.logo img {
+    height: 21px;
+}
+
+.menu {
+    list-style: none;
+    font-size: 0;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.menu a {
+    border: 2px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 17px;
+    transition: border .3s, color .3s;
+}
+
+.menu a:hover {
+    border-color: #4bcaff;
+    color: #4bcaff;
+}
+
+.hero {
+    height: 800px;
+    background-image: url('/img/slider.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: rgba(70, 81, 88, .7);
+    display: inline-block;
+    margin-top: 400px;
+}
