@@ -16,6 +16,23 @@ BASE RULES
 body {
     font-family: 'Open Sans', sans-serif;
 }
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+h2::after {
+    display: block;
+    content: "";
+    width: 45px;
+    border-bottom: 2px solid;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
 
 
 /**************************
@@ -27,6 +44,7 @@ LAYOUT RULES
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    padding: 80px 0;
 }
 
 
@@ -42,6 +60,9 @@ COMPONENTS
     left: 0;
     right: 0;
     top: 0;
+}
+.header .wrap {
+     padding: 0;
 }
 
 .logo {
@@ -98,4 +119,79 @@ COMPONENTS
     background-color: rgba(70, 81, 88, .7);
     display: inline-block;
     margin-top: 400px;
+}
+
+
+.services {
+    background-color: #4bcaff;
+    color: white;
+}
+.services p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.services-gallery {
+    font-size: 0;
+    margin: 20px -20px 0 -20px;
+}
+
+.service {
+    display: inline-block;
+    width: 25%;
+    /* outline: 1px solid red; */
+    padding: 20px;
+    vertical-align: top;
+}
+.service img {
+    height: 48px;
+}
+.service h3 {
+    margin: 24px 0 20px 0;
+}
+
+
+.portofolio-menu a {
+    color: #515f67;
+}
+.portfolio h2 {
+    display: inline-block;
+}
+.portfolio-gallery {
+    font-size: 0;
+    margin: 0 -15px;
+}
+.portfolio-item {
+    width: 25%;
+    display: inline-block;
+    padding: 15px;
+}
+.portfolio-item a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: white;
+}
+.portfolio-item img {
+    width: 100%;
+}
+.portfolio-overlay {
+    font-size: 60px;
+    background: rgba(70, 81, 88, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+.portfolio-item a:hover .portfolio-overlay {
+    opacity: 1;
+}
+.portfolio-overlay span {
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
