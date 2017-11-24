@@ -27,11 +27,21 @@ h2::after {
     width: 45px;
     border-bottom: 2px solid;
 }
+h2 img {
+    height: 30px;
+    float: right;
+}
 
 h3 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 24px;
+}
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 20px 0;
 }
 
 
@@ -47,9 +57,41 @@ LAYOUT RULES
     padding: 80px 0;
 }
 
+.row {
+    font-size: 0;
+    margin: 0 -15px;
+}
+.column {
+    width: 50%;
+    display: inline-block;
+    /* outline: 1px solid red; */
+    padding: 0 15px;
+    vertical-align: top;
+}
+
 
 /**************************
 COMPONENTS
+***************************/
+.button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353F46;
+    border: 2px solid;
+    text-decoration: none;
+    padding: 15px 35px;
+    transition: color .3s;
+}
+.button:hover {
+    color: #4bcaff;
+}
+
+
+
+/**************************
+SECTIONS
 ***************************/
 
 .header {
@@ -60,6 +102,7 @@ COMPONENTS
     left: 0;
     right: 0;
     top: 0;
+    z-index: 9000;
 }
 .header .wrap {
      padding: 0;
@@ -159,7 +202,7 @@ COMPONENTS
 }
 .portfolio-gallery {
     font-size: 0;
-    margin: 0 -15px;
+    margin: 65px -15px 0 -15px;
 }
 .portfolio-item {
     width: 25%;
@@ -171,6 +214,7 @@ COMPONENTS
     display: block;
     position: relative;
     color: white;
+    overflow: hidden;
 }
 .portfolio-item img {
     width: 100%;
@@ -183,10 +227,14 @@ COMPONENTS
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: transform .3s;
 }
 .portfolio-item a:hover .portfolio-overlay {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0);
+
 }
 .portfolio-overlay span {
     /* outline: 1px solid red; */
@@ -194,4 +242,63 @@ COMPONENTS
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.default {
+    background-color: #515F67;
+    color: white;
+}
+.default iframe {
+    width: 100%;
+    height: 310px;
+}
+
+
+.twitter {
+    background-color: #4bcaff;
+    color: white;
+}
+.twitter p {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.78;
+}
+.twitter a {
+    text-decoration: none;
+    font-weight: 600;
+    color: inherit;
+}
+
+
+
+.who-is {
+    background-image: url('/img/about.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+.social { 
+
+}
+
+.social .button {
+    color: white;
+    width: 64px;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    margin: 0 10px;
+}
+.social .button:first-child {
+    margin-left: 0;
+}
+
+.social img {
+    height: 26px;
+    vertical-align: middle;
 }
