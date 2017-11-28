@@ -17,24 +17,24 @@
             </a>
 
             <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 
 
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="wrap">
             <h1>Web Design</h1>
         </div>
     </div>
 
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="wrap">
             <h2>Services</h2>
 
@@ -65,7 +65,7 @@
     </div>
 
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="wrap">
             <h2>Portfolio</h2>
 
@@ -149,7 +149,7 @@
     <!-- end .portfolio -->
 
 
-    <div class="default">
+    <div class="default" id="features">
         <div class="wrap">
             <div class="row">
                 <div class="column">
@@ -205,6 +205,81 @@
         </div>
     </div>
 
+    <div class="profile">
+        <div class="wrap">
+            <h2>My Profile</h2>
+
+            <div class="profile-image">
+                <img src="/img/profile.png" alt="">
+
+                <div class="profile-overlay">
+                    <span>+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="testimonials">
+        <div class="wrap">
+            <h2>
+                Testimonials
+                <img src="/img/icons/testimonial.png" alt="">
+            </h2>
+            <p class="testimonial-text">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+            <p class="testimonial-author">-Walter White</p>
+        </div>
+    </div>
+
+
+
+    <div class="contact" id="contact">
+        <div class="wrap">
+            <h2>Contact</h2>
+
+            <form action="">
+
+                <div class="row">
+
+                    <div class="column">
+                        <label for="">Full name</label>
+                        <input type="text" name="full-name" placeholder="Enter your name">
+
+                        <label for="">Email</label>
+                        <input type="email" name="email" placeholder="Enter your email address">
+                    </div>
+
+                    <div class="column">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quasi eum, magnam aliquid nulla commodi voluptate iste praesentium officia reiciendis. Blanditiis similique dicta nobis vitae itaque. Ullam praesentium placeat laudantium!</p>
+                        <p>Linda Newman<br>W325 State Road 123<br>Mondovi, WI(Wisconsin) 98746-54321<br>(715) 946 - 1234</p>
+                    </div>
+
+                </div>
+
+                <label for="">Message</label>
+                <textarea name="message" id="" placeholder="Your message"></textarea>
+
+                <button class="button button-primary">Send</button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="wrap">
+            <ul class="footer-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <p class="copyright">2017 &copy;</p>
+        </div>
+    </div>
 
 
 </body>
