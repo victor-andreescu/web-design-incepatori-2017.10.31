@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proiect Web Design</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=8j6Xzz0exL">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=8j6Xzz0exL">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=8j6Xzz0exL">
+    <link rel="manifest" href="/manifest.json?v=8j6Xzz0exL">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=8j6Xzz0exL" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=8j6Xzz0exL">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+
+    <div class="overlay jsOverlay">
+        <div class="modal">
+
+            <a href="" class="modal-close jsModalClose">&times;</a>
+
+            <h2>Fereastra detalii</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam id fugiat laboriosam veritatis perspiciatis vitae sequi nisi repellendus itaque voluptatibus nemo similique et minima, maiores velit rem, libero facere quae.</p>
+        </div>
+    </div>
+
+
 
     <div class="header">
         <div class="wrap">
@@ -20,8 +44,20 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio" class="jsShowDropdown">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown jsDropdown">
+        <div class="wrap">
+            <ul class="menu">
+                <li><a href="">All</a></li>
+                <li><a href="">Landscapes</a></li>
+                <li><a href="">People</a></li>
+                <li><a href="">Buildings</a></li>
+                <li><a href="">Nature</a></li>
             </ul>
         </div>
     </div>
@@ -158,10 +194,10 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore accusamus quae mollitia nulla non minus sint, tempora totam nam animi soluta voluptatem saepe praesentium quos obcaecati vitae quia provident perspiciatis?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis obcaecati rem veniam fugiat deserunt exercitationem delectus nemo dolorum velit non, harum laborum, fuga nesciunt similique sed hic amet totam?</p>
 
-                    <a href="" class="button">Visit me</a>
+                    <a href="" class="button jsMore">Visit me</a>
                 </div>
                 <div class="column">
-                    <iframe src="https://player.vimeo.com/video/242763018?title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <!-- <iframe src="https://player.vimeo.com/video/242763018?title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
@@ -281,6 +317,11 @@
         </div>
     </div>
 
+
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+
+    <script src="/js/script.js"></script>
 
 </body>
 </html>

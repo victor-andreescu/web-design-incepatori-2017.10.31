@@ -169,14 +169,15 @@ SECTIONS
 ***************************/
 
 .header {
-    background-color: rgba(70, 81, 88, .7);
+    background-color: rgba(70, 81, 88, 1);
     overflow: auto;
     padding: 55px 0;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    z-index: 9000;
+    z-index: 9050;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
 }
 .header .wrap {
     padding-top: 0;
@@ -219,6 +220,31 @@ SECTIONS
     border-color: #4bcaff;
     color: #4bcaff;
 }
+
+
+.dropdown {
+    background-color: rgba(70, 81, 88, 1);
+    overflow: auto;
+    padding: 55px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 153px;
+    z-index: 9000;
+    transform: translateY(-100%);
+    transition: transform .5s;
+}
+
+.dropdown.is-visible {
+    transform: translateY(0);
+}
+.dropdown .wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
 
 .hero {
     height: 800px;
@@ -479,4 +505,58 @@ SECTIONS
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9100;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s;
+}
+.overlay.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.overlay.is-visible .modal {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.modal-close:hover {
+    background: coral;
+    color: white;
 }
