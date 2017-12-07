@@ -20,3 +20,17 @@ $('.jsShowDropdown').on('click', function(event){
 
     $('.jsDropdown').toggleClass('is-visible');
 });
+
+
+$('.jsShowMenu').on('click', function(event){
+    event.preventDefault();
+
+    $('.jsResponsiveMenu').addClass('is-visible');
+});
+
+
+$('.jsCloseMenu').on('click', function(event){
+    event.preventDefault();
+
+    $('.jsResponsiveMenu').removeClass('is-visible');
+});
